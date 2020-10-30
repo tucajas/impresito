@@ -52,7 +52,7 @@ class Cliente( models.Model):
     email = models.EmailField
 
 # TABLA PEDIDOS
-class OrdenDeTrabajo(models.Model):
+class Pedido(models.Model):
     fecha = models.DateField()
     descripcion = models.CharField(max_length=40)
     cliente = models.CharField(max_length=10)
