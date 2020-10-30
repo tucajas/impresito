@@ -54,7 +54,7 @@ class Pedido(models.Model):
    
 # TABLA VENTA
 class Venta(models.Model):
-    producto = models.CharField(max_length=40)
+    producto = models.CharField(default=0, max_length=100)
     precioUnitario = models.IntegerField(default=0)
     precioTotal = models.IntegerField(default=0)
 # TABLA PRODUCTO
@@ -63,6 +63,6 @@ class Producto(models.Model):
     materiaPriUtilizada = models.CharField(max_length=40)
     cantiMatPriUtilizada = models.IntegerField(default=0)
     stock = models.IntegerField(default=0)
-    idventas = models.ForeignKey(Venta, on_delete=models.CASCADE)
+    #idventa = models.ForeignKey(Venta, on_delete=models.CASCADE)
 
     
