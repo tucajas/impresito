@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Proveedor, MateriaPrima, Membership, OrdenDeTrabajo, Producto, Cliente, Pedido, Venta
 
 class MembershipInline(admin.TabularInline):
-    model = MateriaPrima.members.through
+    model = Proveedor.members.through
 class Proveedoradmin(admin.ModelAdmin):
     inlines = [
         MembershipInline,

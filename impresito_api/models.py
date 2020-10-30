@@ -6,7 +6,6 @@ from django.db import models
 # TABLA MATERIA PRIMA
 class MateriaPrima( models.Model):
     descripcion = models.CharField(max_length=100)
-    
     stock = models.IntegerField(default=0)
     precio = models.IntegerField(default=0)
     def __str__(self):
