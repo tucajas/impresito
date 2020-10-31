@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'impresito_api',
     'rest_framework',
+    'impresito_api.apps.ordenDeTrabajoConfig',
 ]
 
 MIDDLEWARE = [
